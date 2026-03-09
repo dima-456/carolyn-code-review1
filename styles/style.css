@@ -6,7 +6,9 @@ body {
 h1 {
     font-size: 2.5rem;
 }
-
+h1, h2, h3, h4, h5 {
+    font-family: 'Garamond';
+}
 section {
    width: 100%;
 }
@@ -37,4 +39,35 @@ ul {
 
 ul li {
     margin-bottom: 1rem;
+}
+
+ul li.bold {
+    font-weight: bold;
+}
+
+ul li.italic {
+    font-style: italic;
+}
+
+ul li:nth-child(3){
+    border: 3px solid salmon;
+}
+
+ul li:nth-child(4){
+    text-transform: uppercase;
+    font-size: 0.7em;
+    letter-spacing: 2px;
+}
+
+div.bg-color {
+    background: rgb(52, 126, 215);
+}
+
+div.bg-color.padding {
+ padding: 2em;
+}
+
+img.inline {
+    width: 100%;
+    filter: saturate(110%);
 }
